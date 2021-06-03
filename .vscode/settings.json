@@ -1,0 +1,7 @@
+{
+    "powermode.enabled": true,
+    "powermode.comboThreshold": 1,
+    "powermode.presets": "fireworks",
+    "powermode.explosionFrequency": 28,
+    "powermode.explosionOffset": 0
+}

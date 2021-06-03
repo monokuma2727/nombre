@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+
+.container-all {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-box a{
+    text-decoration: none;
+    color:black;
+
+}
+
+.box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    background: rgb(22, 206, 175);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px black;
+}
+
+.box .icon,
+.box h4
+.box p {
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+
+}
+
+.box .icon{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    transform: translateY(30px);
+}
+.box:hover .icon{
+    color:rgba(0, 0, 0, 0.74);
+    font-size: 30px;
+    transform: translateY(0);
+}
+
+
+.box h4,
+.box p{
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+
+}
+
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+}
+.box:hover h4{
+    transform: translateY(0);
+    color: rgb(0, 0, 0);
+}
+
+.box p{
+    font-size: 14px;
+    transform:translateY(100px);
+    opacity: 0;
+}
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: rgb(143, 9, 9);
+    position: absolute;
+    top:250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(158, 118, 8), rgb(230, 95, 6));
+}
+
+.box:hover .background-hover{
+    width: 500px;
+    height: 500px;
+    top: -70px;
+    left: -70;
+}
+
+/*cambiar color de las diferentes cajas*/
+
+
+/*box1*/
+.box1 .icon{
+    color:rgb(221, 19, 19)
+}
+.box1 .background-hover{
+    background: linear-gradient(to bottom, rgb(8, 145, 61), rgb(69, 241, 46));
+}
+
+/*box2*/
+.box2 .icon{
+    color:rgb(15, 168, 214)
+}
+.box2 .background-hover{
+    background: linear-gradient(to bottom, rgb(233, 183, 235), rgb(38, 2, 59));
+}
+
+/*box3*/
+.box3 .icon{
+    color:chartreuse
+}
+.box3 .background-hover{
+    background: linear-gradient(to bottom, rgb(235, 205, 141), rgb(122, 85, 6));
+}
+/*box4*/
+.box4 .icon{
+    color:rgb(201, 191, 61)
+}
+.box4 .background-hover{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+/*box5*/
+.box5 .icon{
+    color:rgb(127, 79, 190)
+}
+.box5 .background-hover{
+    background: linear-gradient(to bottom, rgb(255, 102, 0), rgb(255, 172, 133));
+}
+
+/*box6*/
+.box6 .icon{
+    color:rgb(106, 18, 117)
+}
+.box6 .background-hover{
+    background: linear-gradient(to bottom, rgb(202, 198, 253), rgb(0, 6, 90));
+}
+
+
+
